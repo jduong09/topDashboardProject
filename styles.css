@@ -160,7 +160,7 @@ main {
   display: grid;
   gap: 1rem;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: auto auto;
   background-color: hsl(205, 23%, 85%);
 }
 
@@ -174,16 +174,17 @@ main {
   margin-bottom: 1rem;
 }
 
+.projects-wrapper > h3, aside > h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
 .projects-wrapper > div {
-  height: calc(100% - 4rem);
+  height: calc(100% - 36px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
-}
-.project-card {
-  display: flex;
-  flex-direction: column;
 }
 
 .project-card > ul {
@@ -192,9 +193,12 @@ main {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
   background-color: hsl(0, 0%, 100%);
   position: relative;
+  box-shadow: 0 0.25rem 0.5rem hsla(0, 0%, 0%, .25);
 }
 
 .project-card::after {
@@ -208,8 +212,8 @@ main {
 }
 
 .project-card > h3 {
+  font-size: 1.15rem;
   font-weight: 700;
-  font-size: 1.25rem;
 }
 
 .svg-favorite, .svg-eye-shown, .svg-fork {
@@ -225,11 +229,13 @@ main {
 .article > aside:nth-of-type(2) {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  align-self: end;
 }
 
 .div-list-wrapper {
   padding: 1.5rem;
   background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0.25rem 0.5rem hsla(0, 0%, 0%, .25);
 }
 
 .div-list-wrapper > ul > li {
