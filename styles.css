@@ -182,8 +182,8 @@ main {
 .projects-wrapper > div {
   height: calc(100% - 36px);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -263,4 +263,16 @@ aside > h3 {
 #div-trending > ul > li > svg {
   display: block;
   margin-right: .5rem;
+}
+
+/* Mobile */
+
+@media (min-width: 576px) {
+
+}
+
+/* Tablet */
+
+@media (min-width: 767px) {
+
 }
